@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1160px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.min-vh-100{
+    min-height: 100vh;
+}
+.bg-sec{
+    background-color: #F7F7F7;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+.head {
+    color: var(--gray, #808080);
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;   
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px 21px;
+    max-width: 540px;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 11px 44px -10px rgba(0, 0, 0, 0.25);
+}
+
+.accordian-head {
+    color: var(--gray, #808080);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.accordian-item1 {
+    cursor: pointer;
+    height: 59px;
+    border: 1px solid var(--border, rgba(0, 0, 0, 0.10));
+    border-radius: 5px;
+    padding: 17px 11px 13px 19px;
+    overflow: hidden;
+}
+
+.accordian-content {
+    color: var(--gray, #808080);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 20px;
+
+}
+
+.mt-43 {
+    margin-top: 43px;
+}
+.accordian-item1.active {
+    border: 1px solid black;
+}
+.accordian-item1.active .group{
+    color: black;
+}
+
+.accordian-item1.active .group svg {
+    transform: rotate(180deg);
+} 
+.active{
+    height: unset;
+}
